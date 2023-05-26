@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>位置1_样式</title>
+    <style>
+        h2{
+            color:green;
+            font-size: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="./position.css">
+</head>
+<body>
+    <!-- 有冲突的样式才会有优先级问题 -->
+    <!--
+    优先级
+        行内样式>内部样式=外部样式
+        外部样式 与 内部样式 后来者居上
+    -->
+    <!-- 行内样式(不推荐) -->
+    <h1 style="color: red;font-size: 60px;">欢迎来到尚硅谷学习</h1>
+    <!-- 内部样式 -->
+    <h2>欢迎来到尚硅谷学习</h2>
+    <!-- 外部样式（最推荐） -->
+    <h3>欢迎来到尚硅谷学习</h3>
+
+
+    <!--
+    css的结构：
+        选择器 ：声明块
+        声明块={属性名： 属性值;属性名： 属性值;...}
+    -->
+</body>
+</html>
