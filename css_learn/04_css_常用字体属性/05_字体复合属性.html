@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_字体复合属性</title>
+    <style>
+        /* 字体大小和字体族必须写 */
+        /* 字体族放倒数第一，字体大小放倒数第二，其余往前加 */
+        /* 推荐写复合属性 如果只调某个属性不用复合 */
+        .atguigu1 {
+            font: bold italic 100px "STCaiyun";
+        }
+        .atguigu2 {
+            font: italic bold 100px "STCaiyun2","STHupo",sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="atguigu1">尚硅谷1</div>
+    <div class="atguigu2">尚硅谷2</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>03_字体风格</title>
+    <style>
+        /* italic 和 oblique的区别(推荐italic)
+        italic 先尝试寻找倾斜字体，如果找到直接用，找不到就将正常字体强制倾斜
+        oblique 直接将正常字体强制倾斜 */
+        .atguigu1 {
+            font-size: 100px;
+            font-style: normal;
+        }
+        .atguigu2 {
+            font-size: 100px;
+            font-style: italic;
+        }
+        .atguigu3 {
+            font-size: 100px;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <div class="atguigu1">尚硅谷1</div>
+    <div class="atguigu2">尚硅谷2</div>
+    <div class="atguigu3">尚硅谷3</div>
+    <!-- 标签强调语义，样式还是用css调 -->
+    <em>尚硅谷4</em>
+</body>
+</html>

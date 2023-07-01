@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_字体族</title>
+    <style>
+        /* 字体分衬线字体和非衬线字体，网页大多用非衬线字体 */
+        /* 字体名建议用英文，百度查 */
+        .atguigu1 { 
+            font-size: 100px;
+        }
+        .atguigu2 {
+            font-size: 100px;
+            font-family: "微软雅黑", "Miscrosoft YaHei";
+        }
+        .atguigu3 {
+            font-size: 100px;
+            font-family: "楷体";
+        }
+        .atguigu4 {
+            font-size: 100px;
+            font-family: "宋体";
+        }
+        .atguigu5 {
+            font-size: 100px;
+            font-family: "华文彩云";
+        }
+        /* 当所选字体不存在或者错误时，默认微软雅黑 */
+        .atguigu6 {
+            font-size: 100px;
+            font-family: "翩翩体-简";
+        }
+        /* 顺序往后找，直至找到一个存在的字体 */
+        /* sans-serif(serif)代表当前面字体全都失效时，找一个能用的非衬线字体(衬线字体) */
+        .atguigu7 {
+            font-size: 100px;
+            font-family: "翩翩体-简", "华文彩云", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="atguigu1">尚硅谷1</div>
+    <div class="atguigu2">尚硅谷2</div>
+    <div class="atguigu3">尚硅谷3</div>
+    <div class="atguigu4">尚硅谷4</div>
+    <div class="atguigu5">尚硅谷5</div>
+    <div class="atguigu6">尚硅谷5</div>
+    <div class="atguigu7">尚硅谷5</div>
+</body>
+</html>
