@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_元素的显示模式</title>
+    <style>
+        #d1 {
+            background-color: skyblue;
+        }
+        #d2 {
+            background-color: orange;
+        }
+        #d3 {
+            background-color: green;
+        }
+        .one {
+            background-color: skyblue;
+        }
+        .two {
+            background-color: orange;
+        }
+        img {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--     
+    ●行内块元素(inline-block)
+        又称:内联块元素
+        特点:
+            1.在页面中不独占一行，一行中不能容纳下的行内元素，会在下一-行继续从左到右排列。
+            2.默认宽度:由内容撑开。
+            3. 默认高度:由内容撑开。
+            4. 可以通过CSS设置宽高。
+    ●行内元素(inline)
+        又称:内联元素
+        特点:
+            1.在页面中不独占一行，一行中不能容纳下的行内元素，会在下一行继续从左到右排列。
+            2.默认宽度:由内容撑开。
+            3.默认高度:由内容撑开。
+            4.无法通过CSS设置宽高。
+    ●行内块元素(inline-block)
+        又称:内联块元素
+        特点:
+            1.在页面中不独占一行，一行中不能容纳下的行内元素，会在下一行继续从左到右排列。
+            2.默认宽度:由内容撑开。
+            3.默认高度:由内容撑开。
+            4.可以通过CSS设置宽高。
+    -->
+    <div id="d1">山回路转不见君</div>
+    <div id="d2">雪上空留马行处</div>
+    <div id="d3">还记得许多年前的春天</div>
+    <hr>
+    <!-- 行内元素无法设置宽高 -->
+    <span class="one">人之初</span>
+    <span class="two">性本善</span>
+    <hr>
+    <!-- 行内块元素可以设置宽高 -->
+    <img src="" alt="">
+</body>
+</html>

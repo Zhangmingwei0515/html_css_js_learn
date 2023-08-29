@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>08_盒子的内边距_padding</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 400px;
+            /* padding的值不能为负数 */
+
+            /* 左侧内边距 */
+            padding-left: 20px;
+            /* 上侧内边距 */
+            padding-top: 30px;
+            /* 右侧内边距 */
+            padding-right: 40px;
+            /* 下侧内边距 */
+            padding-bottom: 50px;
+
+            /* 复合属性，写一个值，含义：四个方向内边距是一样的 */
+            padding: 20px ;
+            /* 复合属性，写两个值，含义：上下、左右的内边距 */
+            padding: 10px 20px;
+            /* 复合属性，写三个值，含义：上、左右、下的内边距 */
+            padding: 10px 20px 30px;
+            /* 复合属性，写四个值，含义：上、右、下、左的内边距 */
+            padding: 10px 20px 30px 40px;
+
+            font-size: 20px;
+            background-color: skyblue;
+        }
+        span {
+            /* 行内样式不要写上下内边距(行内块元素可以) */
+            background-color: orange;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">你好啊</div>
+    <hr>
+    <span>我很好</span>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod laboriosam ipsa. Placeat inventore suscipit dolorum consectetur nam, mollitia atque ex nesciunt quidem porro saepe labore veniam eos eaque quaerat?</div>
+</body>
+</html>
