@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>12_margin的注意事项2</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: skyblue;
+        }
+        .box2 {
+            background-color: orange;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .box3 {
+            background-color: green;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .second {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- margin-top、margin=left会影响自身位置，margin-bottom和margin-right会影响兄弟元素的位置 -->
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <hr>
+    <img src="http://www.kevinnan.org.cn/usr/images/me.jpg" alt=""><img class="second" src="http://www.kevinnan.org.cn/usr/images/me.jpg" alt=""><img src="http://www.kevinnan.org.cn/usr/images/me.jpg" alt="">
+</body>
+</html>

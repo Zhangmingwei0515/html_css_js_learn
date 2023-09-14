@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>18_处理内容的溢出</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+            overflow: hidden;
+            /* 下面这俩不要用 */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+        }
+        #d2 {
+            width: 1000px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim ratione accusamus optio incidunt
+        dolorem placeat quaerat fuga corrupti quia ipsum suscipit, dignissimos animi rem nisi labore iusto cupiditate
+        <div id="d2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vitae minus quam magnam asperiores placeat porro nostrum vero dicta nemo quia sequi enim consequuntur illo odio at animi est assumenda deleniti voluptatem modi debitis. Quo cumque veniam ratione, temporibus error qui atque voluptatem a quidem nisi voluptatibus quisquam ut dignissimos?</div>
+        ad. Aut blanditiis dolor assumenda et omnis, porro dolores natus est dolorum rem eveniet tenetur corporis, nisi
+        deleniti inventore dignissimos quas, repellendus quis? Repellat eum quas, accusamus doloremque expedita
+        similique voluptatum veritatis eos enim tenetur, nostrum corrupti architecto alias, consequatur eveniet nobis ad
+        fugit reprehenderit. Numquam voluptatem saepe quia. Eos blanditiis quo voluptates natus, eaque enim, quasi dicta
+        ducimus voluptate, saepe nisi cupiditate. Dolorum dolor vel esse aliquid suscipit ut beatae?
+    </div>
+</body>
+
+</html>
