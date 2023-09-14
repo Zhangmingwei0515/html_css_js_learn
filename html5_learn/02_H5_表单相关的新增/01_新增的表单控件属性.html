@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_新增的表单控件属性</title>
+</head>
+<body>
+    <!-- 
+    1.表单控件新增属性
+        placeholder 提示文字(注意:不是默认值，value 是默认值)， 适用于文字输入类的表单控件。
+        required 表示该输入项必填，适用于除按钮外其他表单控件。
+        autofocus 自动获取焦点，适用于所有表单控件。
+        autocomplete 自动完成，可以设置为on或off，适用于文字输入类的表单控件。注意:密码输入框、多行输入框不可用。
+        pattern 填写正则表达式，适用于文本输入类表单控件。 注意:多行输入不可用，且空的输入框不会验证，往往与required 配合。 
+    -->
+        <form action="">
+        账号：<input 
+                type="text" 
+                name="account" 
+                placeholder="请输入" 
+                required 
+                autofocus 
+                autocomplete="on"
+                pattern="\w(6)"
+              >
+        <br>
+        密码：<input type="password" name="pwd" placeholder="请输入">
+        <br>
+        性别：
+            <input type="radio" value="male" name="gender" required>男
+            <input type="radio" value="female" name="gender">女
+        <br>
+        爱好：
+            <input type="checkbox" value="smoke" name="hobby">抽烟
+            <input type="checkbox" value="drink" name="hobby">喝酒
+            <input type="checkbox" value="perm" name="hobby">烫头
+        <br>
+        其他：<textarea name="other" placeholder="请输入"></textarea>
+        <br>
+        <button>提交</button>
+
+    </form>
+</body>
+</html>
