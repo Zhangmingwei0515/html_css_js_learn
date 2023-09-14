@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_多列布局案例</title>
+    <style>
+        .outer {
+            width: 1000px;
+            margin: 0 auto;
+
+            /* 直接指定列数 */
+            /* column-count: 3; */
+
+            /* 指定每一列的宽度 会自动计算列数 */
+            /* column-width: 220px; */
+
+            /* 复合属性能同时指定列宽和列数（不推荐） */
+            columns: 3 220px;
+
+            /* 调整列间距 */
+            column-gap: 20px;
+
+            /* 每一列边框的宽度 */
+            column-rule-width: 2px;
+            /* 每一列边框的风格 */
+            column-rule-style: dashed;
+            /* 每一列边框的颜色 */
+            column-rule-color: red;
+            /* 边框相关符合属性 */
+            column-rule: 2px dashed red;
+        }
+        h1 {
+            /* 是否跨列 */
+            column-span: all;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>《震惊！xxxxxxxxxxxxxxxxxxx》</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat blanditiis voluptatibus numquam. Voluptatum officia voluptate eveniet, consequuntur quod, facere illum accusamus ex blanditiis aut incidunt deleniti corrupti illo ipsa eos. Quia eligendi vero velit hic, asperiores necessitatibus reiciendis dolorum modi optio! Inventore ad laudantium maxime, libero sint praesentium possimus expedita, provident magnam id ratione modi facere tempora totam! Placeat similique sequi vitae nesciunt quos et. Ratione fuga voluptates quaerat provident quo odio eius, architecto ab dolores totam illum mollitia sapiente facilis eos modi libero non veniam pariatur dolore laudantium eligendi tenetur voluptate numquam? Quod minima placeat doloremque, mollitia dolore sint.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dicta nemo quas nulla numquam! Porro, quis recusandae sequi ratione error voluptatibus veniam consectetur. Ea corrupti itaque vel. Explicabo a exercitationem expedita ducimus dolores, placeat ea totam ipsa nesciunt fugiat similique temporibus harum modi aut quisquam ipsum ipsam animi impedit id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sint reprehenderit totam quisquam, id, aperiam explicabo voluptatem sit illo vero dolores laborum. Esse sunt eaque quasi earum repudiandae architecto libero, ullam dignissimos! Fugiat, tenetur. Illum, quaerat itaque reiciendis quo alias a modi ipsam repudiandae, blanditiis quia culpa consequuntur beatae eos consectetur. Recusandae at explicabo dolor vitae, perspiciatis exercitationem dolorem, porro provident odit nam suscipit ad voluptatem quod ea sit optio. Libero excepturi sapiente rerum consectetur!</p>
+    </div>
+</body>
+</html>

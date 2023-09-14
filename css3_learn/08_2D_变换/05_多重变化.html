@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_多重变化</title>
+    <style>
+        /* 发生旋转会使坐标系发生变换，所以多重变化发生时，旋转建议放最后 */
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            transform: translate(100px ,100px) rotate(30deg);
+            /* transform: rotate(30deg) translate(100px ,100px); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">你好啊</div>
+    </div>
+</body>
+</html>
